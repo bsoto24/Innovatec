@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Mis opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_talleres"
+                android:icon="@drawable/ic_talleres"
+                android:title="Talleres deportivos" />
+            <item
+                android:id="@+id/nav_deportes"
+                android:icon="@drawable/ic_deportes"
+                android:title="Deportes" />
+            <item
+                android:id="@+id/nav_lugares"
+                android:icon="@drawable/ic_lugares"
+                android:title="Zonas deportivas" />
+        </menu>
+    </item>
+    <item android:title="Otros">
+        <menu>
+            <item
+                android:id="@+id/nav_preguntas"
+                android:icon="@drawable/ic_preguntas"
+                android:title="Preguntas frecuentes" />
+            <item
+                android:id="@+id/nav_configurar"
+                android:icon="@drawable/ic_settings"
+                android:title="Configurar" />
+            <item
+                android:id="@+id/nav_salir"
+                android:icon="@drawable/ic_logout"
+                android:title="Cerrar session" />
+        </menu>
+    </item>
+
+</menu>

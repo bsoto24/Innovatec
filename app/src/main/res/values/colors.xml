@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorPrimaryLight">#B2EBF2</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#232b3a</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="colorAccentDark">#e4420f</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="lightGray">#ededed</color>
+
+    <color name="facebook">#4455b6</color>
+    <color name="google">#dc4b39</color>
+    <color name="white">#ffffff</color>
+
+    <color name="side_start">#00bcd4</color>
+    <color name="side_medium">#14b2c6</color>
+    <color name="side_end">#24b9cc</color>
+
+    <color name="btn_inactive">#757575</color>
+    <color name="btn_card_yes">#4bad4f</color>
+    <color name="btn_card_no">#f24235</color>
+    <color name="black">#000000</color>
+    <color name="textPrimary">#333030</color>
+</resources>
