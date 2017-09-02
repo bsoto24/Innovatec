@@ -185,7 +185,6 @@ public class LocaleFragment extends BaseFragment implements OnMapReadyCallback, 
         (customDialog.findViewById(R.id.btn_promocion)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String uri;
                 customDialog.dismiss();
                 Intent intent = new Intent(getContext(), LocaleActivity.class);
                 intent.putExtra("locale", locale);
