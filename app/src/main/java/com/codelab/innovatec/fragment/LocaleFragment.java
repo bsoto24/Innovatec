@@ -26,6 +26,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.codelab.innovatec.R;
+import com.codelab.innovatec.activity.LocaleActivity;
 import com.codelab.innovatec.core.BaseFragment;
 import com.codelab.innovatec.entities.Locale;
 import com.codelab.innovatec.presenter.LocalePresenter;
@@ -186,6 +187,9 @@ public class LocaleFragment extends BaseFragment implements OnMapReadyCallback, 
             public void onClick(View view) {
                 String uri;
                 customDialog.dismiss();
+                Intent intent = new Intent(getContext(), LocaleActivity.class);
+                intent.putExtra("locale", locale);
+                startActivity(intent);
             }
         });
         customDialog.show();

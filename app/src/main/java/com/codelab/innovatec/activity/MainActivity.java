@@ -1,4 +1,4 @@
-package com.codelab.innovatec;
+package com.codelab.innovatec.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.codelab.innovatec.R;
 import com.codelab.innovatec.fragment.LocaleFragment;
 import com.codelab.innovatec.util.ActivityUtils;
 
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Innovatec");
+        getSupportActionBar().setTitle("SportFast");
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_talleres:
                 flag = true;
                 break;
-            case R.id.nav_deportes:
+            case R.id.nav_torneos:
                 flag = true;
                 break;
             case R.id.nav_lugares:

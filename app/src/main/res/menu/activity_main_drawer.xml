@@ -8,9 +8,9 @@
                 android:icon="@drawable/ic_talleres"
                 android:title="Talleres deportivos" />
             <item
-                android:id="@+id/nav_deportes"
+                android:id="@+id/nav_torneos"
                 android:icon="@drawable/ic_deportes"
-                android:title="Deportes" />
+                android:title="Torneos deportivos" />
             <item
                 android:id="@+id/nav_lugares"
                 android:icon="@drawable/ic_lugares"
