@@ -83,8 +83,8 @@ public class MainActivity extends AppCompatActivity
         }
         if (flag) {
             drawer.closeDrawer(GravityCompat.START);
-            startActivity(intent);
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//            startActivity(intent);
+//            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         }
         return true;
     }
