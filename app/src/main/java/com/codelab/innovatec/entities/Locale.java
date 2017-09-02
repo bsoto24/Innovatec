@@ -14,6 +14,15 @@ public class Locale implements ClusterItem, Serializable {
     private String localLongitud;
     private String localTaller;
 
+    public Locale(String localId, String localNombre, String localDireccion, String localLatitud, String localLongitud, String localTaller) {
+        this.localId = localId;
+        this.localNombre = localNombre;
+        this.localDireccion = localDireccion;
+        this.localLatitud = localLatitud;
+        this.localLongitud = localLongitud;
+        this.localTaller = localTaller;
+    }
+
     public String getLocalId() {
         return localId;
     }

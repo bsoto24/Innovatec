@@ -4,13 +4,13 @@ import android.content.Context;
 import android.widget.Toast;
 
 import com.codelab.innovatec.contract.LocaleContract;
+import com.codelab.innovatec.entities.Locale;
 import com.codelab.innovatec.fragment.LocaleFragment;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.maps.android.clustering.ClusterManager;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 public class LocalePresenter implements LocaleContract {
 
@@ -42,6 +42,9 @@ public class LocalePresenter implements LocaleContract {
     @Override
     public void mostrarLocales() {
         ArrayList<Locale> datos = new ArrayList<>();
+        datos.add(new Locale("1", "Cantolao", "Campo de Marte", "-12.0700534", "-77.0417081", "Academia de Futbol"));
+        datos.add(new Locale("2", "Sporting Cristal", "Rimac", "-12.0593718", "-77.045644", "Academia de Futbol"));
+        datos.add(new Locale("3", "Alianza Lima", "Estadio Matute", "-12.0690113", "-77.0271513", "Academia de Futbol"));
         showMarkers(datos);
     }
 
