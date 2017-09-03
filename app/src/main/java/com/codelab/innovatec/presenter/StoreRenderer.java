@@ -49,8 +49,8 @@ public class StoreRenderer extends DefaultClusterRenderer<Locale> {
     }
 
     @Override
-    protected void onBeforeClusterItemRendered(Locale person, MarkerOptions markerOptions) {
-        mImageView.setImageResource(R.drawable.ic_stadium);
+    protected void onBeforeClusterItemRendered(Locale locale, MarkerOptions markerOptions) {
+        mImageView.setImageResource(locale.getIcon());
         Bitmap icon = mIconGenerator.makeIcon();
         markerOptions.icon(BitmapDescriptorFactory.fromBitmap(icon));
     }

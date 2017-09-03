@@ -4,17 +4,21 @@
     <item android:title="Mis opciones">
         <menu>
             <item
-                android:id="@+id/nav_talleres"
-                android:icon="@drawable/ic_talleres"
-                android:title="Talleres deportivos" />
+                android:id="@+id/nav_zona_deportiva"
+                android:icon="@drawable/ic_zona_deportiva"
+                android:title="Zonas deportivas" />
+            <item
+                android:id="@+id/nav_deportes"
+                android:icon="@drawable/ic_deportes"
+                android:title="Deportes" />
             <item
                 android:id="@+id/nav_torneos"
-                android:icon="@drawable/ic_deportes"
-                android:title="Torneos deportivos" />
+                android:icon="@drawable/ic_torneos"
+                android:title="Eventos deportivos" />
             <item
-                android:id="@+id/nav_lugares"
-                android:icon="@drawable/ic_lugares"
-                android:title="Zonas deportivas" />
+                android:id="@+id/nav_partidos"
+                android:icon="@drawable/ic_partido"
+                android:title="Mis Partidos" />
         </menu>
     </item>
     <item android:title="Otros">

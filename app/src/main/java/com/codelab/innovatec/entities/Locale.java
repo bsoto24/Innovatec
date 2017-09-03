@@ -13,14 +13,16 @@ public class Locale implements ClusterItem, Serializable {
     private String localLatitud;
     private String localLongitud;
     private String localTaller;
+    private int icon;
 
-    public Locale(String localId, String localNombre, String localDireccion, String localLatitud, String localLongitud, String localTaller) {
+    public Locale(String localId, String localNombre, String localDireccion, String localLatitud, String localLongitud, String localTaller, int icon) {
         this.localId = localId;
         this.localNombre = localNombre;
         this.localDireccion = localDireccion;
         this.localLatitud = localLatitud;
         this.localLongitud = localLongitud;
         this.localTaller = localTaller;
+        this.icon = icon;
     }
 
     public String getLocalId() {
@@ -69,6 +71,14 @@ public class Locale implements ClusterItem, Serializable {
 
     public void setLocalTaller(String localTaller) {
         this.localTaller = localTaller;
+    }
+
+    public int getIcon() {
+        return icon;
+    }
+
+    public void setIcon(int icon) {
+        this.icon = icon;
     }
 
     @Override

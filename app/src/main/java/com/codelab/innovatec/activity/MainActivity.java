@@ -59,21 +59,29 @@ public class MainActivity extends AppCompatActivity
         Intent intent = null;
         boolean flag = false;
         switch (id) {
-            case R.id.nav_talleres:
+            case R.id.nav_zona_deportiva:
+                intent = new Intent(MainActivity.this, CentrosActivity.class);
+                flag = true;
+                break;
+            case R.id.nav_deportes:
+                intent = new Intent(MainActivity.this, DeportesActivity.class);
+
                 flag = true;
                 break;
             case R.id.nav_torneos:
+                intent = new Intent(MainActivity.this, EventosActivity.class);
                 flag = true;
                 break;
-            case R.id.nav_lugares:
-                flag = true;
-                break;
-            case R.id.nav_configurar:
+            case R.id.nav_partidos:
+                intent = new Intent(MainActivity.this, PartidoActivity.class);
                 flag = true;
                 break;
             case R.id.nav_salir:
-                flag = true;
+                flag = false;
                 this.finish();
+                break;
+            case R.id.nav_configurar:
+                flag = true;
                 break;
             case R.id.nav_preguntas:
                 flag = true;
@@ -84,8 +92,8 @@ public class MainActivity extends AppCompatActivity
         }
         if (flag) {
             drawer.closeDrawer(GravityCompat.START);
-//            startActivity(intent);
-//            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         }
         return true;
     }

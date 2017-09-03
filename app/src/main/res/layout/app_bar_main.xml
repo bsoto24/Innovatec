@@ -16,6 +16,18 @@
     </android.support.design.widget.AppBarLayout>
 
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:src="@drawable/ic_search"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/body_local"
+        app:layout_anchorGravity="bottom|right" />
+
     <FrameLayout
         android:id="@+id/body_local"
         android:layout_width="match_parent"

@@ -42,6 +42,8 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.maps.android.clustering.Cluster;
 import com.google.maps.android.clustering.ClusterManager;
 
+import java.util.ArrayList;
+
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class LocaleFragment extends BaseFragment implements OnMapReadyCallback, LocationListener, ClusterManager.OnClusterClickListener<Locale>, ClusterManager.OnClusterItemClickListener<Locale> {
@@ -367,6 +369,10 @@ public class LocaleFragment extends BaseFragment implements OnMapReadyCallback, 
         LatLngBounds bounds = new LatLngBounds(sw, ne);
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, 50));
+        if(mMap.getCameraPosition().zoom == mMap.getMaxZoomLevel()){
+            ArrayList<Locale> locales = (ArrayList<Locale>) cluster.getItems();
+            mostrar(locales.get(0));
+        }
 
         return true;
     }

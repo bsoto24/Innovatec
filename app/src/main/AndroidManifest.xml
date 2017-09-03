@@ -15,7 +15,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
@@ -30,13 +29,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".activity.EncuestaActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.MainActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".activity.LocaleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EventosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PartidoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DetalleEventoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DeportesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CentrosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CrearEventoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
             android:screenOrientation="portrait" />
     </application>
 
