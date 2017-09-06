@@ -1,4 +1,4 @@
-package com.capsula.medapp.presentation.adapter;
+package com.codelab.innovatec.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,8 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.capsula.medapp.R;
-import com.capsula.medapp.data.entities.PreguntaTO;
+
+import com.codelab.innovatec.R;
+import com.codelab.innovatec.entities.PreguntaTO;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.capsula.medapp.presentation.activity;
+package com.codelab.innovatec.activity;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -7,7 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.transition.Fade;
 import android.transition.Slide;
 
-import com.capsula.medapp.R;
+import com.codelab.innovatec.R;
+
 
 public class ConfiguracionActivity extends AppCompatActivity {
 

@@ -59,6 +59,17 @@
         <activity
             android:name=".activity.LoginActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ConfiguracionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PreguntaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FiltroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyThemeNoBar"/>
+
     </application>
 
 </manifest>

@@ -24,7 +24,7 @@ public class EventosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_torneos);
-        showToolbar("Torneos Deportivos", true);
+        showToolbar("Eventos Deportivos", true);
 
         rvTorneos = (RecyclerView) findViewById(R.id.rv_torneos);
         rvTorneos.setLayoutManager(new LinearLayoutManager(this));

@@ -1,4 +1,4 @@
-package com.capsula.medapp.presentation.activity;
+package com.codelab.innovatec.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -8,13 +8,11 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.capsula.medapp.R;
-import com.capsula.medapp.data.entities.PreguntaTO;
-import com.capsula.medapp.presentation.adapter.PreguntasAdapter;
+import com.codelab.innovatec.R;
+import com.codelab.innovatec.adapter.PreguntasAdapter;
+import com.codelab.innovatec.entities.PreguntaTO;
 
 import java.util.ArrayList;
-
-import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class PreguntaActivity extends AppCompatActivity {
 

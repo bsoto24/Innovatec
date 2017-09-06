@@ -1,6 +1,8 @@
 package com.codelab.innovatec.activity;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -8,6 +10,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.codelab.innovatec.R;
 import com.codelab.innovatec.fragment.LocaleFragment;
@@ -17,6 +20,8 @@ import com.codelab.innovatec.util.ActivityUtils;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private FloatingActionButton btnBuscar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +29,17 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("SportFast");
+
+        btnBuscar = (FloatingActionButton) findViewById(R.id.btn_buscar);
+
+        btnBuscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, FiltroActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -81,11 +97,14 @@ public class MainActivity extends AppCompatActivity
                 this.finish();
                 break;
             case R.id.nav_configurar:
+                intent = new Intent(MainActivity.this, ConfiguracionActivity.class);
                 flag = true;
                 break;
             case R.id.nav_preguntas:
+                intent = new Intent(MainActivity.this, PreguntaActivity.class);
                 flag = true;
                 break;
+
             default:
                 flag = false;
                 break;

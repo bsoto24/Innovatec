@@ -1,4 +1,4 @@
-package com.capsula.medapp.data.entities;
+package com.codelab.innovatec.entities;
 
 /**
  * Created by Desarrollo3 on 4/20/2017.
